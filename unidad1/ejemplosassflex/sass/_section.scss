@@ -1,0 +1,15 @@
+@import "mixins";
+section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+
+    article{
+        @include articulo(32%,100%,rgb(2, 1, 1),1px  blue solid,darkorange,'s');
+       
+
+        
+
+        }
+
+    }

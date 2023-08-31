@@ -51,4 +51,18 @@ nav ul li a {
   nav li a {
     color: rgb(134, 112, 112);
   }
+}
+/*variables nav*/
+section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+section article {
+  width: 32%;
+  height: 100%;
+  background: rgb(2, 1, 1);
+  border: 1px blue solid;
+  color: darkorange;
+  border-radius: 10px;
 }/*# sourceMappingURL=estilos.css.map */

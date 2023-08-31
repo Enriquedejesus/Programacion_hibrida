@@ -1,0 +1,15 @@
+@use "variables";
+
+@mixin articulo($ancho,$alto,$fondo,$borde,$color,$bandera){
+    width: $ancho;
+    height: $alto;
+    background: $fondo;
+    border: $borde;
+    color: $color;
+    @if($bandera == "s"){
+        border-radius: 10px;
+    }
+
+
+
+}
