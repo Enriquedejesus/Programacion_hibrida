@@ -1,0 +1,54 @@
+/*variables nav*/
+header {
+  display: flex;
+  background-color: orange;
+  align-items: center;
+  border: 2px orangered solid;
+  border-radius: 10px;
+}
+header h3 {
+  color: rgb(0, 255, 106);
+}
+
+.img {
+  width: 49px;
+  height: 48px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav {
+  background-color: salmon;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  text-align: center;
+}
+@media (max-width: 763px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 764px) {
+  nav {
+    background-color: rgb(223, 12, 223);
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+  nav li a {
+    color: rgb(134, 112, 112);
+  }
+}/*# sourceMappingURL=estilos.css.map */

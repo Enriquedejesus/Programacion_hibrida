@@ -1,0 +1,42 @@
+@use "variables";
+nav {
+    background-color: variables.$color_fondo_nav;
+    border-radius: 10px;
+    margin-top: 5px;
+    
+    ul {
+        list-style-type: variables.$tipo_lista_nav;
+        display: variables.$display_nav;
+
+        justify-content: variables.$distribucion_nav;
+        padding: 10px;
+
+        li {
+            a {
+                text-decoration: variables.$text_decoration_nav_a;
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: 763px) { // Cambiamos a diseño vertical cuando el ancho de la pantalla es menor
+        ul {
+            flex-direction: column; // Cambia a diseño vertical
+            align-items: flex-start; // Alinea elementos a la izquierda
+        }
+    }
+}
+
+@media (min-width: 764px) {
+    nav {
+        background-color: rgb(223, 12, 223);
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+        }
+        li a {
+            color: rgb(134, 112, 112);
+        }
+    }
+}

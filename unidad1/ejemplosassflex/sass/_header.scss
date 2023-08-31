@@ -1,0 +1,19 @@
+@use "variables";
+
+header {
+    display: variables.$display_header;
+    background-color: variables.$color_fondo_header;
+    align-items: center;
+    border: variables.$border_header;
+    border-radius: variables.$border_radius_header;
+
+    h3{
+        color: rgb(0, 255, 106);
+    }
+}
+.img{
+    width: variables.$ancho_logo;
+    height: variables.$alto_logo;
+    padding-left: variables.$pading_img;
+    padding-right: variables.$pading_img;
+}
